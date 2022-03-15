@@ -1,0 +1,30 @@
+<div class="add-movie">
+  <h1>Movies App</h1>
+  <label>
+    Title :
+    <input type="text" placeholder="Title" [(ngModel)]="title" />
+  </label>
+  <label>
+    Date :
+    <input type="date" [(ngModel)]="date" />
+  </label>
+  <label>
+    Time :
+    <input type="time" placeholder="time" [(ngModel)]="time" />
+  </label>
+  <label
+    >Genre :
+    <select [(ngModel)]="genre" class="selectGenre">
+      <option></option>
+      <option value="action">Action</option>
+      <option value="comedy">Comedy</option>
+      <option value="drama">Drama</option>
+      <option value="fantasy">Fantasy</option>
+      <option value="horror">Horror</option>
+      <option value="romance">Romance</option>
+    </select>
+  </label>
+  <label for="summary" class="aboutMovie">About : </label>
+  <textarea name="summary" cols="18" rows="5" [(ngModel)]="summary"></textarea>
+  <button class="addBtn" (click)="addMovie()">Add</button>
+</div>

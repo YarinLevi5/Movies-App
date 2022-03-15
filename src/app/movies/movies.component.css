@@ -1,0 +1,20 @@
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.filterMovie {
+  display: flex;
+  margin: 10px;
+  flex-flow: column;
+  position: absolute;
+  top: 20px;
+  font-family: fantasy;
+  color: royalblue;
+}
+label {
+  margin: 10px;
+  padding: 5px;
+  font-size: 16px;
+}

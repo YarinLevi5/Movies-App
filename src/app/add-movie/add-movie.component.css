@@ -1,0 +1,39 @@
+.add-movie {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+.add-movie input,
+label,
+.selectGenre {
+  margin: 5px;
+  padding: 6px;
+  text-align: center;
+  font-family: fantasy;
+}
+.add-movie input {
+  width: 150px;
+}
+label {
+  color: darkolivegreen;
+}
+.addBtn {
+  width: 60px;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  padding: 3px;
+  background-color: darkolivegreen;
+}
+.aboutMovie {
+  position: absolute;
+  right: 860px;
+  top: 340px;
+}
+textarea {
+  margin-bottom: 10px;
+  margin-right: -40px;
+}
+.selectGenre {
+  width: 165px;
+}

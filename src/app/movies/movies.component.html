@@ -1,0 +1,17 @@
+<app-add-movie></app-add-movie>
+<div class="filterMovie">
+  <label>
+    Filter By Name :
+    <input type="text" [(ngModel)]="name" />
+  </label>
+  <label>
+    Filter By Date :
+    <input type="text" />
+  </label>
+</div>
+<div class="wrapper">
+  <app-movie
+    *ngFor="let movie of movies | movieNamePipe: name"
+    [movie]="movie"
+  ></app-movie>
+</div>
