@@ -28,7 +28,7 @@ label {
 .aboutMovie {
   position: absolute;
   right: 860px;
-  top: 340px;
+  top: 410px;
 }
 textarea {
   margin-bottom: 10px;
@@ -36,4 +36,8 @@ textarea {
 }
 .selectGenre {
   width: 165px;
+}
+.isNew {
+  display: flex;
+  flex-flow: column;
 }

@@ -12,6 +12,7 @@ export class AddMovieComponent implements OnInit {
   @Input() summary = '';
   @Input() genre = '';
   @Input() time = '';
+  @Input() isNew = false;
 
   addMovie() {
     let movieObject = {
@@ -20,9 +21,14 @@ export class AddMovieComponent implements OnInit {
       summary: this.summary,
       genre: this.genre,
       time: this.time,
+      isNew: this.toggleIsNewValue(),
     };
     this.service.addOneMovie(movieObject);
     this.title = this.date = this.summary = this.genre = this.time = '';
+    this.isNew = false;
+  }
+  toggleIsNewValue() {
+    return this.isNew;
   }
   constructor(private service: MovieService) {}
 

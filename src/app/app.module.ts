@@ -7,6 +7,7 @@ import { MoviesComponent } from './movies/movies.component';
 import { MovieComponent } from './movie/movie.component';
 import { AddMovieComponent } from './add-movie/add-movie.component';
 import { MovieNamePipe } from './pipes/movie-name-pipe.pipe';
+import { NewMoviePipe } from './pipes/new-movie.pipe';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { MovieNamePipe } from './pipes/movie-name-pipe.pipe';
     MovieComponent,
     AddMovieComponent,
     MovieNamePipe,
+    NewMoviePipe,
   ],
   imports: [BrowserModule, FormsModule],
   providers: [],

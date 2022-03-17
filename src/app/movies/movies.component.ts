@@ -9,9 +9,12 @@ import { MovieService } from '../services/movie-service.service';
 export class MoviesComponent implements OnInit {
   movies: Movie[] = [];
   @Input() name = '';
+  @Input() isNew = false;
   constructor(private service: MovieService) {
     this.movies = this.service.getMovies();
   }
-
+  checkboxValue() {
+    return this.isNew;
+  }
   ngOnInit(): void {}
 }

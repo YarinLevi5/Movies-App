@@ -10,7 +10,7 @@
   </label>
   <label>
     Time :
-    <input type="time" placeholder="time" [(ngModel)]="time" />
+    <input type="time" [(ngModel)]="time" />
   </label>
   <label
     >Genre :
@@ -23,6 +23,10 @@
       <option value="horror">Horror</option>
       <option value="romance">Romance</option>
     </select>
+  </label>
+  <label class="isNew"
+    >isNew
+    <input type="checkbox" [(ngModel)]="isNew" (change)="toggleIsNewValue()" />
   </label>
   <label for="summary" class="aboutMovie">About : </label>
   <textarea name="summary" cols="18" rows="5" [(ngModel)]="summary"></textarea>

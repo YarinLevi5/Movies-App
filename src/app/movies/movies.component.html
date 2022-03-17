@@ -5,13 +5,13 @@
     <input type="text" [(ngModel)]="name" />
   </label>
   <label>
-    Filter By Date :
-    <input type="text" />
+    Filter By Is New :
+    <input type="checkbox" [(ngModel)]="isNew" (change)="checkboxValue()" />
   </label>
 </div>
 <div class="wrapper">
   <app-movie
-    *ngFor="let movie of movies | movieNamePipe: name"
+    *ngFor="let movie of movies | movieNamePipe: name | newMovie: isNew"
     [movie]="movie"
   ></app-movie>
 </div>
