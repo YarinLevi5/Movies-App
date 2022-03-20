@@ -10,11 +10,15 @@ export class MoviesComponent implements OnInit {
   movies: Movie[] = [];
   @Input() name = '';
   @Input() isNew = false;
+
   constructor(private service: MovieService) {
-    this.movies = this.service.getMovies();
+    this.service
+      .sendGetRequest()
+      .subscribe((data: Movie) => this.movies.push({ ...data }));
   }
+
   checkboxValue() {
     return this.isNew;
   }
-  ngOnInit(): void {}
+  ngOnInit() {}
 }

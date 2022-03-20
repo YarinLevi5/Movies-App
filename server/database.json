@@ -1,0 +1,22 @@
+{
+  "movies": [
+    {
+      "id": 12353256,
+      "title": "Yarin's story",
+      "date": "22-10-2021",
+      "time": "19:00",
+      "genre": "fantasy",
+      "isNew": true,
+      "about": "All my life"
+    },
+    {
+      "id": 2345234,
+      "title": "rina's story",
+      "date": "20-02-2014",
+      "time": "08:00",
+      "genre": "horror",
+      "isNew": false,
+      "about": "me"
+    }
+  ]
+}
